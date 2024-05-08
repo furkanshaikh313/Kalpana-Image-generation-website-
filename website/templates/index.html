@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family: comic; margin: 0; padding: 0;">Kalpana</title>
+    <link rel="icon" type="image/x-icon" href="../static/Title.png">
+    <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1AC3E1, #0F7AB0);
+            color: #fff;
+        }
+
+        header {
+            background: none;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #bbe1fa;
+        }
+
+        .btn-container button {
+            background-color: yellow;
+            color: yellow;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-container button:hover {
+            background-color: #333;
+        }
+
+        section {
+            padding: 35px;
+            margin: 20px;
+            background-color: #0a0707;
+            color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-container{
+	    margin-left:200px;
+            align:center;
+        }
+
+        .ro, .bro {
+            border-radius: 50px;
+            border: none;
+            font-size: 30px;
+        }
+
+        .sro {
+            border-radius: 150px;
+            border: none;
+        }
+
+        label {
+            font-size: 30px;
+            font-family: 'comic-sans';
+        }
+
+        .dd {
+            margin-right: 10px;
+        }
+      
+        .sea{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="dd">
+            <img src="../static/Title.png" width="55" height="55" align="leftSS">
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Search</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="btn-container">
+            <button onclick="window.location.href='http://127.0.0.1:5000/login'" style="font-family: Arial, sans-serif; background-color: #555; color: #fff; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; margin-right: 10px; transition: background-color 0.3s;">Login</button>
+            <button onclick="window.location.href='http://127.0.0.1:5000/sign-up'" style="font-family: Arial, sans-serif; background-color: #555; color: #fff; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; margin-right: 10px; transition: background-color 0.3s;">Signup</button>
+            <button onclick="window.location.href='http://127.0.0.1:5000/logout'" style="font-family: Arial, sans-serif; background-color: #555; color: #fff; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; margin-right: 10px; transition: background-color 0.3s;">Logout</button>
+        </div>
+    </header>
+    
+    <section id="services" align="center" class="sro">
+        <form method="post">
+            <label for="search" style="font-size: 30px; font-family: Arial, sans-serif;">Your Imagination:</label>
+            <input class="ro" type="text" placeholder=" Thoughts to Enter" name="search">
+            <button class="bro" style="background-color: yellow; color: #fff; border: none; padding: 10px 20px; border-radius: 50px; cursor: pointer; transition: background-color 0.3s;"><img class="sea" src="../static/search.png"><i class="fa fa-search" style="font-size: 30px;"></i></button>
+        </form>
+    </section>
+
+    <div class="image-container" align="center">
+         <img src="../static/output_image.png" alt="Default Image">
+    </div>
+    <section id="services">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p align="center" style="font-family: Arial, sans-serif; font-size: 18px; color: #fff;">The Imagination You think in your mind, We make it a reality by recreating.....<br>
+           The thoughts are important to you. So never lose it and generate with us.<br>
+           Your thoughts can help you to Imagine more and visualize all the current aspects<br> 
+           of life that you dreamed of through an image....<br>
+           Give us a try:<br>
+           Just Type in the description of your thought or Imagination<br>
+           And let Us generate an image for you<br>
+           You can also download and Save the image as per your Choice...."<br>
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p style="font-family: Arial, sans-serif; font-size: 18px; color: #fff;">You can contact us via email, phone, or by filling out the contact form below:</p>
+        <form>
+            <label for="name" style="font-family: Arial, sans-serif; font-size: 18px; color: #fff;">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email" style="font-family: Arial, sans-serif; font-size: 18px; color: #fff;">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message" style="font

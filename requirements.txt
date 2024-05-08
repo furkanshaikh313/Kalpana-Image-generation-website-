@@ -1,0 +1,7 @@
+flask
+Flask-SQLAlchemy
+flask-login
+pillow
+gradio_client
+bytesio
+os

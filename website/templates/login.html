@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to bottom right, #6f86d6, #48c6ef);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 350px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+        font-size: 2rem;
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .form input[type="email"],
+    .form input[type="password"] {
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease;
+    }
+
+    .form input[type="email"]:focus,
+    .form input[type="password"]:focus {
+        outline: none;
+        border-color: #6f86d6;
+    }
+
+    .form button {
+        padding: 10px;
+        width: 100%;
+        background-image: linear-gradient(to bottom right, #6f86d6, #48c6ef);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .form button:hover {
+        background-image: linear-gradient(to bottom right, #48c6ef, #6f86d6);
+    }
+
+    .link {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .link a {
+        color: #6f86d6;
+        text-decoration: none;
+    }
+
+    .link a:hover {
+        color: #48c6ef;
+    }
+</style>
+</head>
+<body>
+ <div class="btn-container">
+	<button onclick="window.location.href='http://127.0.0.1:5000/sign-up'" style="font-family: Arial, sans-serif; background-color: #555; color: #fff; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; margin-right: 10px; transition: background-color 0.3s;">Signup</button>
+ </div>          
+<div class="container">
+    <form method="POST" class="form">
+        <h3 class="logo">Login</h3>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <div class="link">
+        <a href="#">Forgot password?</a>
+    </div>
+</div>
+</body>
+</html>
